@@ -4,7 +4,7 @@
 
 **Project name**: Note App
 
-**Description:** TThis note app builds using React library with the help of Create React App to initialize the project. This project builds for Dicoding Beginner React Course submission.
+**Description:** This note app builds using React library with the help of Create React App to initialize the project. This project builds for Dicoding Beginner React Course submission.
 
 **Technologies used:**
 
