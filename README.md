@@ -10,6 +10,7 @@
 
 - React
 - Create React App
+- CSS
 
 **The course that I followed:** [Learn to Create Web App With React](https://www.dicoding.com/academies/403)
 
