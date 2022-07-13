@@ -1,0 +1,249 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Asap", sans-serif;
+  color: #112340;
+}
+
+:root {
+  display: flex;
+  justify-content: center;
+}
+
+.main-container {
+  width: 1200px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+}
+
+.search-bar {
+  width: 150px;
+  height: 40px;
+  border: 2px solid #112340;
+  border-radius: 10px;
+  padding: 0 12px 0 16px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.search-bar::placeholder {
+  font-size: 18px;
+  font-weight: 400;
+  color: #7d8797;
+}
+
+h1 {
+  font-size: 42px;
+  font-weight: 500;
+  line-height: 55px;
+  text-align: center;
+  margin-top: 40px;
+  color: #7d8797;
+}
+
+h1 + p {
+  font-size: 18px;
+  font-weight: 400;
+  color: #7d8797;
+  text-align: center;
+  margin-top: 20px;
+}
+
+form {
+  width: 600px;
+  margin: 40px auto 0;
+}
+
+form label {
+  display: block;
+  font-size: 24px;
+  font-weight: 500;
+  margin-left: 4px;
+}
+
+form > label {
+  margin-top: 20px;
+}
+
+.title-label,
+.content-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.content-label {
+  margin-top: 20px;
+}
+
+form input,
+form textarea {
+  width: 600px;
+  height: 40px;
+  padding: 0 4px;
+  margin-top: 4px;
+  border: 2px solid #112340;
+  border-radius: 6px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 40px;
+}
+
+form input::placeholder,
+form textarea::placeholder {
+  font-size: 18px;
+  font-weight: 400;
+  color: #7d8797;
+}
+
+form textarea {
+  height: 140px;
+  resize: none;
+}
+
+select {
+  width: 100px;
+  height: 32px;
+  font-size: 18px;
+  font-weight: 500;
+  border: 2px solid #112340;
+  border-radius: 4px;
+  margin-top: 4px;
+}
+
+input[type="submit"] {
+  height: 48px;
+  font-size: 24px;
+  margin-top: 40px;
+  background-color: #41c1a6;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+input[type="submit"][disabled] {
+  background-color: #a5bcb7;
+  cursor: auto;
+}
+
+.filter-container {
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+  margin: 80px auto 0;
+}
+
+.filter-note,
+.filter-archive {
+  width: 150px;
+  height: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  background-color: #e3defd;
+  border: 2px solid #112340;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.filter-archive {
+  background-color: #ffce5d;
+}
+
+.filter-note.inactive {
+  background-color: #fbfbff;
+}
+
+.filter-archive.inactive {
+  background-color: #ffce5d9d;
+}
+
+.note-container,
+.archive-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1200px;
+  padding-bottom: 100px;
+  margin-top: 40px;
+}
+
+.note-item {
+  position: relative;
+  width: 540px;
+  height: 500px;
+  padding: 10px;
+  margin: 40px 0 0 40px;
+  border: 2px solid #112340;
+  border-radius: 8px;
+  color: #112340;
+  word-wrap: break-word;
+}
+
+.note {
+  background-color: #fbfbff;
+}
+
+.archive {
+  background-color: #ffe9b7;
+}
+
+h3 {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.date {
+  font-size: 14px;
+  color: #7d8797;
+}
+
+.content {
+  line-height: 24px;
+  margin-top: 8px;
+}
+
+.action-note {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 516px;
+  bottom: 10px;
+}
+
+.note-item button {
+  width: 150px;
+  height: 40px;
+  font-size: 18px;
+  color: #112340;
+  background-color: #fff;
+  border: 2px solid #112340;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.empty-state {
+  font-size: 24px;
+  text-align: center;
+  margin: 40px auto 0;
+  color: #7d8797;
+}
+
+button.archive-button {
+  background-color: #ffe9b7;
+}
+
+button.note-button {
+  background-color: #fbfbff;
+}
+
+button.delete-button {
+  background-color: #f0c3c3;
+}
+
+.hidden {
+  display: none;
+}
